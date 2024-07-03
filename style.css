@@ -1,0 +1,199 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(325deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(164,6,140,1) 45%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form{
+    background-color: white;
+    width: 400px;
+    border-radius: 20px;
+    height: 600px;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    text-align: center;
+    
+}
+
+.form-heading{
+    font-size: 30px;
+    font-family: 'Poppins' , Arial;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    padding-left: 30px;
+    width: 100%;
+    /* background: #000; */
+}
+
+.username-label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.username-input{
+    width:300px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.username-input:focus{
+    outline: none;
+}
+
+.password-label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.password-input{
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.password-input:focus{
+    outline: none;
+}
+.forget-div{
+    text-align: end;
+    /* background: #000; */
+    width: 90%;
+    
+}
+
+.forget{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.forget:hover{
+    color: rgba(0, 0, 0, 0.508);
+    transition: 0.5s ease-in-out;
+}
+
+.forget:active{
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease-in-out;
+}
+
+.login-btn-div{
+    text-align: center;
+}
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 165px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(163, 142, 255);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
+
+  .option-div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons-social{
+    color: black;
+}
+
+.icons-social:hover{
+    color: rgb(0, 121, 251);
+    transition: 0.5s ease-in-out;
+    
+}
