@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <form action="" id="form" onsubmit="validateForm">
+    <form action="" id="form" >
       <div class="main">
         <div class="header">
           <center><h1 class="form-heading">Login</h1></center>
@@ -26,9 +26,12 @@
               class="username-input"
               name="name"
               required
+              autocomplete="name"
+
               id="username"
             />
           </div>
+          <span class="error" id="username-error"></span>
           <label for="password" class="password-label">Password</label>
           <div class="password-div">
             <span class="fa fa-lock"></span>
@@ -38,13 +41,22 @@
               name="password"
               required
               id="password"
+              show
+              autocomplete="current-password"
             />
           </div>
+          <span id="password-error" class="error"></span>
+        </div>
+        <div class="remember-div">
+          <input type="checkbox" id="checkbox" class="checkbox" >
+          <label for="checkbox" class="remmeber-para">Remember me</label>
         </div>
         <div class="forget-div">
           <a href="" class="forget">Forget Password?</a>
+          <p><a href="" class="link-to-sign-up">Don't have an account? Sign up</a></p>
+
         </div>
-        <button class="Btn">
+        <button class="Btn" id="submit-btn" onclick="validate()">
           <div class="sign">
             <svg viewBox="0 0 512 512">
               <path

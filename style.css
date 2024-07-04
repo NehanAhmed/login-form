@@ -5,6 +5,10 @@
     
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 body{
     background: rgb(2,0,36);
     background: linear-gradient(325deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(164,6,140,1) 45%, rgba(0,212,255,1) 100%);
@@ -40,11 +44,30 @@ body{
 
 .form-heading{
     font-size: 30px;
-    font-family: 'Poppins' , Arial;
+    font-family:'Robot Mono' ,monospace;
     padding-left: 20px;
+    text-transform: uppercase;
     text-align: center;
     font-weight: 1000;
 }
+
+.link-to-sign-up{
+    text-decoration: none;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.link-to-sign-up:hover{
+    color: rgb(3, 3, 3);
+    transition: .5s linear ease-in-out;
+}
+
+.link-to-sign-up:active{
+    color: rgb(192, 182, 182);
+    transition: .5s linear ease-in-out;
+}
+
 
 .form-group{
     display: flex;
@@ -64,6 +87,8 @@ body{
     width:300px;
     border: none;
     border-bottom: 1px solid grey;
+    background-color: white;
+    background: none;
 }
 .username-input:focus{
     outline: none;
@@ -77,6 +102,7 @@ body{
     width: 300px;
     border: none;
     border-bottom: 1px solid grey;
+    background-color: white;
 }
 
 .password-input:focus{
@@ -196,4 +222,36 @@ body{
     color: rgb(0, 121, 251);
     transition: 0.5s ease-in-out;
     
+}
+
+.error{
+    font: 18px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-style: italic;
+    color: red;
+}
+
+.remember-div{
+    padding-left: 34px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.checkbox{
+    /* Double-sized Checkboxes */
+  -ms-transform: scale(1); /* IE */
+  -moz-transform: scale(1); /* FF */
+  -webkit-transform: scale(1); /* Safari and Chrome */
+  -o-transform: scale(1); /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+}
+.checkbox:checked{
+    accent-color: red;
+}
+.remmeber-para{
+    font-size: 17px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
 }
